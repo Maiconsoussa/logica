@@ -1,0 +1,35 @@
+<!doctype html >
+<html lang="pt-Br">
+<head>   
+    
+    <meta charset="UTF-8">
+    <title> fusca</title>
+    <script>
+
+
+// lê os valores informados pelo usuário
+let valor1 = parseInt(prompt("Digite o primeiro valor:"));
+let valor2 = parseInt(prompt("Digite o segundo valor:"));
+let valor3 = parseInt(prompt("Digite o terceiro valor:"));
+
+// verifica qual é o menor valor e o descarta
+if (valor1 < valor2 && valor1 < valor3) {
+  valor1 = 0;
+} else if (valor2 < valor1 && valor2 < valor3) {
+  valor2 = 0;
+} else {
+  valor3 = 0;
+}
+
+// escreve a soma dos dois maiores valores
+console.log("A soma dos dois maiores valores é:", valor1 + valor2 + valor3);
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

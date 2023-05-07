@@ -1,0 +1,54 @@
+<!doctype html >
+<html lang="en">
+<head>   
+    <script>
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Digite o primeiro valor: ', (valor1) => {
+  rl.question('Digite o segundo valor: ', (valor2) => {
+    rl.question('Digite a operação desejada (1-Adição, 2-Subtração, 3-Divisão, 4-Multiplicação): ', (operacao) => {
+      
+      valor1 = parseInt(valor1);
+      valor2 = parseInt(valor2);
+      operacao = parseInt(operacao);
+
+      let resultado;
+
+      switch (operacao) {
+        case 1:
+          resultado = valor1 + valor2;
+          console.log(`Resultado da adição: ${resultado}`);
+          break;
+        case 2:
+          resultado = valor1 - valor2;
+          console.log(`Resultado da subtração: ${resultado}`);
+          break;
+        case 3:
+          resultado = valor1 / valor2;
+          console.log(`Resultado da divisão: ${resultado}`);
+          break;
+        case 4:
+          resultado = valor1 * valor2;
+          console.log(`Resultado da multiplicação: ${resultado}`);
+          break;
+        default:
+          console.log('Operação inválida!');
+      }
+
+      rl.close();
+    });
+  });
+});
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

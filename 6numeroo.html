@@ -1,0 +1,32 @@
+
+<!doctype html >
+<html lang="pt-Br">
+<head>   
+    
+    <meta charset="UTF-8">
+    <title> fusca</title>
+    <script>
+
+let soma = 0;
+let numeros = [];
+
+for (let i = 1; i <= 6; i++) {
+  let numero = parseFloat(prompt(`Informe o ${i}º número:`));
+  numeros.push(numero);
+  if (numero < 72) {
+    soma += numero;
+  }
+}
+
+console.log(`Valores informados: ${numeros.join(', ')}`);
+console.log(`Soma dos valores inferiores a 72: ${soma}`);
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

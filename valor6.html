@@ -1,0 +1,42 @@
+
+<!doctype html >
+<html lang="pt-Br">
+<head>   
+    
+    <meta charset="UTF-8">
+    <title> fusca</title>
+    <script>
+
+// Cria um array vazio para armazenar os valores informados
+let valores = [];
+
+// Usa um loop para ler 6 valores informados pelo usuário
+for (let i = 0; i < 6; i++) {
+  let valor = prompt(`Digite o ${i+1}º valor:`);
+  valores.push(parseFloat(valor)); // Adiciona o valor convertido para float no array
+}
+
+// Exibe os números informados
+console.log("Valores informados:");
+console.log(valores);
+
+// Calcula a média aritmética dos valores
+let soma = 0;
+for (let i = 0; i < valores.length; i++) {
+  soma += valores[i];
+}
+let media = soma / valores.length;
+
+// Exibe a média aritmética dos valores
+console.log("Média aritmética dos valores informados:");
+console.log(media);
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>
