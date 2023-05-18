@@ -5,41 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equive="x-UA-compatible" content="IE=edge">
     <meta name ="viewport" content="width=device-widht", initial-scale="1.0">
-    <title>soma</title>
+    <title>calculadora</title>
     <script>
-        const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+      // lê os valores do usuário
+let num1 = parseInt(prompt("Digite o primeiro número: "));
+let num2 = parseInt(prompt("Digite o segundo número: "));
 
-readline.question('Digite o primeiro valor: ', (valor1) => {
-  readline.question('Digite o segundo valor: ', (valor2) => {
-    readline.question('Digite a operação (1-Adição, 2-Subtração, 3-Divisão, 4-Multiplicação): ', (operacao) => {
-      let resultado;
+// lê a operação a ser realizada
+let operacao = parseInt(prompt("Digite a operação a ser realizada: \n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
 
-      switch(parseInt(operacao)) {
-        case 1:
-          resultado = parseInt(valor1) + parseInt(valor2);
-          break;
-        case 2:
-          resultado = parseInt(valor1) - parseInt(valor2);
-          break;
-        case 3:
-          resultado = parseInt(valor1) / parseInt(valor2);
-          break;
-        case 4:
-          resultado = parseInt(valor1) * parseInt(valor2);
-          break;
-        default:
-          console.log('Operação inválida.');
-          readline.close();
-          return;
-      }
+// realiza a operação selecionada e exibe o resultado
+switch(operacao) {
+  case 1:
+    console.log(`${num1} + ${num2} = ${num1 + num2}`);
+    break;
+  case 2:
+    console.log(`${num1} - ${num2} = ${num1 - num2}`);
+    break;
+  case 3:
+    console.log(`${num1} / ${num2} = ${num1 / num2}`);
+    break;
+  case 4:
+    console.log(`${num1} * ${num2} = ${num1 * num2}`);
+    break;
+  default:
+    console.log("Operação inválida.");
+}
 
-      console.log(`O resultado da operação é: ${resultado}`);
-      readline.close();
-    });
-  });
+
     </script>
 </head>
 <body>

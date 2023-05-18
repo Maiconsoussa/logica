@@ -1,0 +1,37 @@
+<!doctype html >
+<html lang="en">
+<head>   
+    
+    <meta charset="UTF-8">
+    <meta http-equive="x-UA-compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-widht", initial-scale="1.0">
+    <title>codar3exe6</title>
+    <script>
+let alunosAprovados = 0;
+let calcularNovamente = true;
+
+while (calcularNovamente) {
+  const nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+  const nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+  const media = (nota1 + nota2) / 2;
+
+  console.log("A média final do aluno é: " + media.toFixed(2));
+
+  if (media >= 9.5) {
+    alunosAprovados++;
+  }
+
+  const resposta = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+  calcularNovamente = resposta === "S";
+}
+
+console.log("Quantidade de alunos aprovados: " + alunosAprovados);
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

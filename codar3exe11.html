@@ -1,0 +1,37 @@
+<!doctype html >
+<html lang="en">
+<head>   
+    
+    <meta charset="UTF-8">
+    <meta http-equive="x-UA-compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-widht", initial-scale="1.0">
+    <title>codar3 exer11</title>
+    <script>
+// Variáveis para contagem
+let dentroIntervalo = 0;
+let foraIntervalo = 0;
+
+// Laço para ler os 10 valores
+for (let i = 1; i <= 10; i++) {
+  // Solicitar valor ao usuário
+  let valor = parseInt(prompt(`Informe o valor ${i}:`));
+
+  // Verificar se está dentro ou fora do intervalo
+  if (valor >= 24 && valor <= 42) {
+    dentroIntervalo++;
+  } else {
+    foraIntervalo++;
+  }
+}
+
+// Exibir resultados
+console.log(`Valores dentro do intervalo: ${dentroIntervalo}`);
+console.log(`Valores fora do intervalo: ${foraIntervalo}`);
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

@@ -5,23 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equive="x-UA-compatible" content="IE=edge">
     <meta name ="viewport" content="width=device-widht", initial-scale="1.0">
-    <title>losangulo</title>
+    <title>calculadora</title>
     <script>
-      let num1 = Number(prompt("Digite o primeiro número:"));
-let num2 = Number(prompt("Digite o segundo número:"));
-let num3 = Number(prompt("Digite o terceiro número:"));
-let num4 = Number(prompt("Digite o quarto número:"));
+let valor1= parseInt(prompt( "digite o primeiro valor:"));
+let valor2 = parseInt(prompt("digite o segundo valor: "));
+let operacao = parseInt(prompt("digite a operacao desejada (1 para adição, 2 para subtração, 3 para divisão e 4 para multiplicação)"));
+let resultado;
 
-if (num1 > 0 && num1 < 10 && num2 > 0 && num2 < 10 && num3 > 0 && num3 < 10 && num4 > 0 && num4 < 10) {
-  let media = (num1 + num2 + num3 + num4) / 4;
-  if (media > 5) {
-    alert("Você passou no teste");
-  } else {
-    alert("Tente novamente");
-  }
-} else {
-  alert("Por favor, digite apenas números entre 0 e 10");
+switch (operacao){
+  case 1:
+    resultado = valor1 + valor2;break;
+    case 2:
+    resultado = valor1 - valor2;break;
+    case 3:
+      resultado = valor1 / valor2;
+      break;
+      case 4:
+        resultado = valor1 * valor2;
+        break;
+        default:
+        alert("operação inválida");
+        break;
 }
+if (resultado = undefined)
+[
+  alert("o resultado da operação escolhida é ${resultado}")
+
+] 
     </script>
 </head>
 <body>

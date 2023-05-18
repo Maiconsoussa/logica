@@ -1,0 +1,52 @@
+
+<!doctype html >
+<html lang="pt-Br">
+<head>   
+    
+    <meta charset="UTF-8">
+    <title>codar3exe9</title>
+    <script>
+ // Função para obter o valor de N do usuário
+function obterNumeroN() {
+  let n = prompt("Digite o valor de N:");
+  n = parseInt(n);
+
+  // Verifica se o valor digitado é um número válido
+  while (isNaN(n) || n <= 0) {
+    n = prompt("Valor inválido. Por favor, digite um número positivo para N:");
+    n = parseInt(n);
+  }
+
+  return n;
+}
+
+// Função para imprimir as tabuadas de 1 a N
+function imprimirTabuadas() {
+  const n = obterNumeroN();
+
+  // Loop para percorrer todas as tabuadas de 1 a N
+  for (let i = 1; i <= n; i++) {
+    console.log(`Tabuada do ${i}:`);
+
+    // Loop para calcular e imprimir a tabuada do número atual
+    for (let j = 1; j <= 10; j++) {
+      let resultado = i * j;
+      console.log(`${i} x ${j} = ${resultado}`);
+    }
+
+    console.log(""); // Linha em branco entre as tabuadas
+  }
+}
+
+// Chamada da função principal
+imprimirTabuadas();
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

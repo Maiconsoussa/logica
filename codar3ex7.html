@@ -1,0 +1,46 @@
+
+<!doctype html >
+<html lang="pt-Br">
+<head>   
+    
+    <meta charset="UTF-8">
+    <title>codar3exe7</title>
+    <script>
+
+// Variável para armazenar a soma das notas
+let somaNotas = 0;
+
+// Variável para armazenar a quantidade de notas lidas
+let quantidadeNotas = 0;
+
+// Loop para ler as 6 notas
+while (quantidadeNotas < 6) {
+  // Solicitar ao usuário uma nova nota
+  let nota = parseFloat(prompt(`Informe a nota ${quantidadeNotas + 1}:`));
+
+  // Verificar se a nota é válida (entre 0 e 10)
+  if (nota >= 0 && nota <= 10) {
+    // Adicionar a nota à soma total
+    somaNotas += nota;
+    quantidadeNotas++;
+  } else {
+    // Nota inválida, solicitar novamente
+    alert("Nota inválida. Informe um valor entre 0 e 10.");
+  }
+}
+
+// Calcular a média
+let media = somaNotas / quantidadeNotas;
+
+// Imprimir a média
+console.log(`A média do aluno é: ${media}`);
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!doctype html >
+<html lang="en">
+<head>   
+    
+    <meta charset="UTF-8">
+    <meta http-equive="x-UA-compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-widht", initial-scale="1.0">
+    <title>codar3exe5</title>
+    <script>
+// Obtém os números informados pelo usuário
+var numero1 = parseInt(prompt("Digite o primeiro número:"));
+var numero2 = parseInt(prompt("Digite o segundo número:"));
+
+// Calcula a média aritmética
+var soma = numero1 + numero2;
+var quantidadeNumeros = Math.abs(numero2 - numero1) + 1;
+var media = soma / quantidadeNumeros;
+
+// Imprime a média
+console.log("A média aritmética é: " + media);
+
+// Imprime os números inteiros entre os dois números informados
+console.log("Números inteiros entre " + numero1 + " e " + numero2 + ":");
+for (var i = numero1 + 1; i < numero2; i++) {
+  console.log(i);
+}
+    </script>
+</head>
+<body>
+
+
+</body>
+
+</html>
